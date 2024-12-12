@@ -1,0 +1,20 @@
+Aapwrite for backend as service 
+Tinymce rich text editor for text editor functionality
+Html-react-parser using to parse html 
+React Hook Forms to hamdle input forms
+Creating .env file to store environment variable
+
+
+npm i @reduxjs/toolkit react-redux react-router-dom appwrite @Tinymce/Tinymce-react html-react-parser react-hook-form
+
+
+for create-react-app
+REACT_APP_NOT_SECRET_CODE
+while using : process.env.REACT_APP_NOT_SECRET_CODE
+
+for vite
+VITE_APPWRITE_URL=123
+import.meta.env.VITE_APPWRITE_URL 
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
