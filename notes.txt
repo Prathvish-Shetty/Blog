@@ -18,3 +18,18 @@ import.meta.env.VITE_APPWRITE_URL
 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+
+freeApi
+
+used vercel for deployment
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Prathvish-Shetty/Blog.git
+git push -u origin main
+git pull origin main --allow-unrelated-histories
+git commit -m "Resolve merge conflicts"
+git push origin main
