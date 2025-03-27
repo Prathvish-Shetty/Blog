@@ -15,12 +15,12 @@ function Header() {
       active: true
     },
     {
-      name: "Login",
+      name: "Sign In",
       slug: "/login",
       active: !authStatus,
     },
     {
-      name: "Signup",
+      name: "Sign Up",
       slug: "/signup",
       active: !authStatus,
     },
@@ -36,25 +36,26 @@ function Header() {
     },
   ]
 
-
   return (
-    <header className='py-3 shadow bg-gray-500'>
+    <header className="py-3 shadow-md bg-white">
       <Container>
-        <nav className='flex'>
-          <div className='mr-4'>
-            <Link to='/'>
-              <Logo width='70px' />
+        <nav className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <Logo width="40px" />
+          </Link>
 
-            </Link>
-          </div>
-          <ul className='flex ml-auto'>
+          {/* Navigation Items */}
+          <ul className="flex items-center gap-x-2 md:gap-x-4">
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
                   <button
                     onClick={() => navigate(item.slug)}
-                    className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
-                  >{item.name}</button>
+                    className="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition"
+                  >
+                    {item.name}
+                  </button>
                 </li>
               ) : null
             )}
